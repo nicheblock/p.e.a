@@ -1,0 +1,252 @@
+<!DOCTYPE html><html><head><title>Games</title><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans&family=Inter:wght@400;900&display=swap" rel="stylesheet">
+<style>:root { --banner: #000000; --text: #ffffff; --card-size: 219px; --accent: #5986da; --font-family: 'Press Start 2P', cursive; }
+body { font-family: var(--font-family); color: var(--text); margin: 0; background-image: none; background-color: rgb(0, 0, 0); background-size: cover; background-attachment: fixed; }
+.top-bar { background: var(--banner); padding: 10px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); min-height: 75px; gap: 20px; }
+.fx-shiny { background: linear-gradient(to right, var(--text) 20%, var(--accent) 40%, var(--accent) 60%, var(--text) 80%); background-size: 200% auto; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: shine 3s linear infinite; }
+@keyframes shine { to { background-position: 200% center; } }
+.fx-animated { animation: float 3s ease-in-out infinite; display: inline-block; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+.logo-left { order: 1; margin-right: auto; } .logo-right { order: 5; margin-left: auto; }
+#grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--card-size), 1fr)); gap: 20px; padding: 30px; }
+.game-card { background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); overflow: hidden; aspect-ratio: 1/1.1; display: flex; flex-direction: column; cursor: pointer; transition: 0.3s;}
+.card-img { flex-grow: 1; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 900; color: var(--accent); background-color: rgba(0,0,0,0.3); }
+.card-footer { background: rgba(0,0,0,0.7); padding: 12px; font-size: 0.9rem; font-weight: bold; text-align: center; }
+#grid.button-mode { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+#grid.button-mode .game-card { aspect-ratio: auto; padding: 14px; justify-content: center; min-height: 48px; }
+#grid.button-mode .card-img { display: none; }
+#grid.button-mode .card-footer { background: transparent; padding: 0; text-align: center; }
+</style></head><body>
+<div class="top-bar">
+    
+    <div style="display:flex; flex-direction:column; order:2;">
+        <div class="fx-animated" style="font-weight:900; font-size:22px; text-transform:uppercase;">Games</div>
+        <div style="font-size:10px; opacity:0.7; margin-top:4px; letter-spacing:1px;">Public Archive Media & Omega Entertainment</div>
+    </div>
+    <div style="flex-grow:1; max-width:400px; display:flex; align-items:center; gap:10px; order:3;">
+        <input type="text" placeholder="Search..." oninput="s(this.value)" style="border-radius:20px; background:rgba(255,255,255,0.1); padding:8px 15px; border:1px solid rgba(255,255,255,0.2); color:white; width:100%;">
+    </div>
+</div>
+<div id="grid" class="button-mode"><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">1</div></div><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">1 on 1 Soccer</div></div><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">10 Bullets</div></div><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">10 Bullets (Back Up)</div></div><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">10 Minutes Till Dawn</div></div><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">10 More Bullets</div></div><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">10 Yard Fight</div></div><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">100 in 1 NES</div></div><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">100 Rooms of Enemies</div></div><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">12 Mini Battles</div></div><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">13 Bones</div></div><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">1942 NES</div></div><div class="game-card">
+            <div class="card-img" style="">1</div>
+            <div class="card-footer">1v1.LoL</div></div><div class="game-card">
+            <div class="card-img" style="">2</div>
+            <div class="card-footer">2D Doom</div></div><div class="game-card">
+            <div class="card-img" style="">3</div>
+            <div class="card-footer">3 Pandas</div></div><div class="game-card">
+            <div class="card-img" style="">3</div>
+            <div class="card-footer">3 Pandas Brazil</div></div><div class="game-card">
+            <div class="card-img" style="">3</div>
+            <div class="card-footer">3 Pandas Fantasy</div></div><div class="game-card">
+            <div class="card-img" style="">3</div>
+            <div class="card-footer">3D Dash</div></div><div class="game-card">
+            <div class="card-img" style="">3</div>
+            <div class="card-footer">3D Dash Editor</div></div><div class="game-card">
+            <div class="card-img" style="">3</div>
+            <div class="card-footer">3D Pinball Space Cadet</div></div><div class="game-card">
+            <div class="card-img" style="">A</div>
+            <div class="card-footer">A Small World Cup</div></div><div class="game-card">
+            <div class="card-img" style="">A</div>
+            <div class="card-footer">Agar.io Lite</div></div><div class="game-card">
+            <div class="card-img" style="">A</div>
+            <div class="card-footer">Among Us</div></div><div class="game-card">
+            <div class="card-img" style="">A</div>
+            <div class="card-footer">Angry Birds Showdown</div></div><div class="game-card">
+            <div class="card-img" style="">A</div>
+            <div class="card-footer">Angrybirds</div></div><div class="game-card">
+            <div class="card-img" style="">A</div>
+            <div class="card-footer">Angrybirds 2</div></div><div class="game-card">
+            <div class="card-img" style="">A</div>
+            <div class="card-footer">Angrybirds Space</div></div><div class="game-card">
+            <div class="card-img" style="">A</div>
+            <div class="card-footer">Aquapark.io</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Baby Sniper in Vietnam</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Backrooms</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Bad Parenting</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Baldi's Basics</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Basket Bros</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Basket Random</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Basketball Legends</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Battle Karts</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Bitlife</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Bitlife Encrypted</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Block Blast</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Bloons</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Bloons 2</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Bloons TD1</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Bloons TD2</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Bloons TD3</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Bloons TD4</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">BMX 2</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Bowmasters</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Brotato</div></div><div class="game-card">
+            <div class="card-img" style="">B</div>
+            <div class="card-footer">Buckshot Roulette</div></div><div class="game-card">
+            <div class="card-img" style="">C</div>
+            <div class="card-footer">C.S 1.6</div></div><div class="game-card">
+            <div class="card-img" style="">C</div>
+            <div class="card-footer">Class of '09</div></div><div class="game-card">
+            <div class="card-img" style="">C</div>
+            <div class="card-footer">Cluster Rush</div></div><div class="game-card">
+            <div class="card-img" style="">C</div>
+            <div class="card-footer">Cluster Rush Backup</div></div><div class="game-card">
+            <div class="card-img" style="">C</div>
+            <div class="card-footer">Crossy Road</div></div><div class="game-card">
+            <div class="card-img" style="">F</div>
+            <div class="card-footer">FIFA 07</div></div><div class="game-card">
+            <div class="card-img" style="">F</div>
+            <div class="card-footer">FIFA 2000</div></div><div class="game-card">
+            <div class="card-img" style="">F</div>
+            <div class="card-footer">Final Earth 2</div></div><div class="game-card">
+            <div class="card-img" style="">F</div>
+            <div class="card-footer">Final Fantasy</div></div><div class="game-card">
+            <div class="card-img" style="">F</div>
+            <div class="card-footer">Final Fantasy 2: NES</div></div><div class="game-card">
+            <div class="card-img" style="">F</div>
+            <div class="card-footer">Final Ninja</div></div><div class="game-card">
+            <div class="card-img" style="">F</div>
+            <div class="card-footer">Fireboy & Watergirl</div></div><div class="game-card">
+            <div class="card-img" style="">G</div>
+            <div class="card-footer">Grow a Garden</div></div><div class="game-card">
+            <div class="card-img" style="">I</div>
+            <div class="card-footer">Ice Dodo</div></div><div class="game-card">
+            <div class="card-img" style="">I</div>
+            <div class="card-footer">Impossible Quiz</div></div><div class="game-card">
+            <div class="card-img" style="">J</div>
+            <div class="card-footer">Jetpack Joyride</div></div><div class="game-card">
+            <div class="card-img" style="">J</div>
+            <div class="card-footer">Jetrush</div></div><div class="game-card">
+            <div class="card-img" style="">J</div>
+            <div class="card-footer">Jetski Racing</div></div><div class="game-card">
+            <div class="card-img" style="">J</div>
+            <div class="card-footer">Johnny Trigger</div></div><div class="game-card">
+            <div class="card-img" style="">K</div>
+            <div class="card-footer">Karate Bros</div></div><div class="game-card">
+            <div class="card-img" style="">K</div>
+            <div class="card-footer">Karlson</div></div><div class="game-card">
+            <div class="card-img" style="">K</div>
+            <div class="card-footer">Kart Bros</div></div><div class="game-card">
+            <div class="card-img" style="">K</div>
+            <div class="card-footer">Kill the Ice Age Baby Adventure</div></div><div class="game-card">
+            <div class="card-img" style="">K</div>
+            <div class="card-footer">Kim Jong Un Tile Puzzle</div></div><div class="game-card">
+            <div class="card-img" style="">K</div>
+            <div class="card-footer">Kirby's Adventure</div></div><div class="game-card">
+            <div class="card-img" style="">L</div>
+            <div class="card-footer">Little Alchemyy 2</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Marble Racer</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Mario Kart 64</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Max Payne</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Melon Playground</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Mini Flips</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Mini Mart</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Minishooters</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Minitooth</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Miragine War</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Missle Command</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Moto X3M</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Moto X3M 2</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">MR Racer</div></div><div class="game-card">
+            <div class="card-img" style="">M</div>
+            <div class="card-footer">Ms Pacman</div></div><div class="game-card">
+            <div class="card-img" style="">P</div>
+            <div class="card-footer">Persona</div></div><div class="game-card">
+            <div class="card-img" style="">P</div>
+            <div class="card-footer">Persona 2</div></div><div class="game-card">
+            <div class="card-img" style="">p</div>
+            <div class="card-footer">pinkbike</div></div><div class="game-card">
+            <div class="card-img" style="">P</div>
+            <div class="card-footer">Pizzatower</div></div><div class="game-card">
+            <div class="card-img" style="">P</div>
+            <div class="card-footer">Plants vs. Zombies</div></div><div class="game-card">
+            <div class="card-img" style="">R</div>
+            <div class="card-footer">Ragdoll Achievement</div></div><div class="game-card">
+            <div class="card-img" style="">R</div>
+            <div class="card-footer">Ragdoll Archers</div></div><div class="game-card">
+            <div class="card-img" style="">R</div>
+            <div class="card-footer">Ragdoll Drop</div></div><div class="game-card">
+            <div class="card-img" style="">R</div>
+            <div class="card-footer">Ragdoll Hit</div></div><div class="game-card">
+            <div class="card-img" style="">R</div>
+            <div class="card-footer">Ragdoll Runners</div></div><div class="game-card">
+            <div class="card-img" style="">R</div>
+            <div class="card-footer">Ragdoll Soccer</div></div><div class="game-card">
+            <div class="card-img" style="">R</div>
+            <div class="card-footer">Ragdoll.io</div></div><div class="game-card">
+            <div class="card-img" style="">R</div>
+            <div class="card-footer">Russian Buckshot</div></div><div class="game-card">
+            <div class="card-img" style="">S</div>
+            <div class="card-footer">Slope</div></div></div>
+<div id="sections-container" style="display:none"><input type="button" value="cl1" style="display:none;"><input type="button" value="cl1on1soccer" style="display:none;"><input type="button" value="cl10bullets" style="display:none;"><input type="button" value="cl10bullets" style="display:none;"><input type="button" value="cl10minutestildawn" style="display:none;"><input type="button" value="cl10morebullets" style="display:none;"><input type="button" value="cl10yardfight" style="display:none;"><input type="button" value="cl100in1nes" style="display:none;"><input type="button" value="cl100RoomsOfEnemies" style="display:none;"><input type="button" value="cl12minibattles" style="display:none;"><input type="button" value="cl13bones" style="display:none;"><input type="button" value="cl1942nes" style="display:none;"><input type="button" value="cl1v1lol" style="display:none;"><input type="button" value="cl2doom" style="display:none;"><input type="button" value="cl3pandas" style="display:none;"><input type="button" value="cl3pandasbrazil" style="display:none;"><input type="button" value="cl3pandasfantasy" style="display:none;"><input type="button" value="cl3dash" style="display:none;"><input type="button" value="cl3dasheditor" style="display:none;"><input type="button" value="cl3dpinballspacecadet" style="display:none;"><input type="button" value="clasmallworldcup" style="display:none;"><input type="button" value="clagariolite" style="display:none;"><input type="button" value="clamongus" style="display:none;"><input type="button" value="clangrybirdsshowdown" style="display:none;"><input type="button" value="clangrybirds" style="display:none;"><input type="button" value="clangrybirds2" style="display:none;"><input type="button" value="clangrybirds-space" style="display:none;"><input type="button" value="claquaparkio" style="display:none;"><input type="button" value="clbabysniperinvietnam" style="display:none;"><input type="button" value="clbackrooms" style="display:none;"><input type="button" value="clbadparenting" style="display:none;"><input type="button" value="clbaldisbasics" style="display:none;"><input type="button" value="clbasketbros" style="display:none;"><input type="button" value="clbasketrandom" style="display:none;"><input type="button" value="clbasketballlegends" style="display:none;"><input type="button" value="clbattlekarts" style="display:none;"><input type="button" value="clbitlife" style="display:none;"><input type="button" value="clbitlifeencrypted" style="display:none;"><input type="button" value="clblockblast" style="display:none;"><input type="button" value="clbloons" style="display:none;"><input type="button" value="clbloons2" style="display:none;"><input type="button" value="clbloonsTD1" style="display:none;"><input type="button" value="clbloonsTD2" style="display:none;"><input type="button" value="clbloonsTD3" style="display:none;"><input type="button" value="clbloonsTD4" style="display:none;"><input type="button" value="clBMX2" style="display:none;"><input type="button" value="clbowmaster" style="display:none;"><input type="button" value="clbrotato" style="display:none;"><input type="button" value="clbuckshotroulette" style="display:none;"><input type="button" value="clcs16" style="display:none;"><input type="button" value="clclassof09" style="display:none;"><input type="button" value="clclusterrush" style="display:none;"><input type="button" value="clusterrush" style="display:none;"><input type="button" value="clcrossyroad" style="display:none;"><input type="button" value="clFIFA07" style="display:none;"><input type="button" value="clfifa2000" style="display:none;"><input type="button" value="clfinalearth2" style="display:none;"><input type="button" value="clfinalfantasy" style="display:none;"><input type="button" value="clfinalfantasy2nes" style="display:none;"><input type="button" value="clfinalninja" style="display:none;"><input type="button" value="clfireboyandwatergirl" style="display:none;"><input type="button" value="clgrowagarden" style="display:none;"><input type="button" value="clicedodo" style="display:none;"><input type="button" value="climpossiblequiz" style="display:none;"><input type="button" value="cljetpackjoyride" style="display:none;"><input type="button" value="cljetrush" style="display:none;"><input type="button" value="cljetskiracing" style="display:none;"><input type="button" value="cljohnnytrigger" style="display:none;"><input type="button" value="clkaratebros" style="display:none;"><input type="button" value="clkarlson" style="display:none;"><input type="button" value="clkartbros" style="display:none;"><input type="button" value="clkilltheiceagebabyadventure" style="display:none;"><input type="button" value="clkimjonguntilepuzzle" style="display:none;"><input type="button" value="clkirbysadventure" style="display:none;"><input type="button" value="cllittlealchemy2" style="display:none;"><input type="button" value="clmarbleracer" style="display:none;"><input type="button" value="clmariokart64" style="display:none;"><input type="button" value="clmaxpayne" style="display:none;"><input type="button" value="clmelonplayground" style="display:none;"><input type="button" value="clminiflips" style="display:none;"><input type="button" value="clminimart" style="display:none;"><input type="button" value="clminishooters" style="display:none;"><input type="button" value="clminitooth" style="display:none;"><input type="button" value="clmiraginewar" style="display:none;"><input type="button" value="clmisslecommand" style="display:none;"><input type="button" value="clmotox3m3" style="display:none;"><input type="button" value="clmotox3m2" style="display:none;"><input type="button" value="clmrracer" style="display:none;"><input type="button" value="clmspacman (1)" style="display:none;"><input type="button" value="clpersona" style="display:none;"><input type="button" value="clpersona2" style="display:none;"><input type="button" value="clpinkbike" style="display:none;"><input type="button" value="clpizzatower" style="display:none;"><input type="button" value="clplantsvszombies" style="display:none;"><input type="button" value="clragdollachivement" style="display:none;"><input type="button" value="clragdollarchers" style="display:none;"><input type="button" value="clragdolldrop" style="display:none;"><input type="button" value="clragdollhit" style="display:none;"><input type="button" value="clragdollrunners" style="display:none;"><input type="button" value="clragdollsoccer" style="display:none;"><input type="button" value="clragdoll-io" style="display:none;"><input type="button" value="clrussianbuckshot" style="display:none;"><input type="button" value="clslope" style="display:none;"></div>
+<script src="https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/games.js"></script>
+<script>
+const data = [{"name":"1","img":"","type":"git","file":"cl1"},{"name":"1 on 1 Soccer","img":"","type":"git","file":"cl1on1soccer"},{"name":"10 Bullets","img":"","type":"git","file":"cl10bullets"},{"name":"10 Bullets (Back Up)","img":"","type":"git","file":"cl10bullets"},{"name":"10 Minutes Till Dawn","img":"","type":"git","file":"cl10minutestildawn"},{"name":"10 More Bullets","img":"","type":"git","file":"cl10morebullets"},{"name":"10 Yard Fight","img":"","type":"git","file":"cl10yardfight"},{"name":"100 in 1 NES","img":"","type":"git","file":"cl100in1nes"},{"name":"100 Rooms of Enemies","img":"","type":"git","file":"cl100RoomsOfEnemies"},{"name":"12 Mini Battles","img":"","type":"git","file":"cl12minibattles"},{"name":"13 Bones","img":"","type":"git","file":"cl13bones"},{"name":"1942 NES","img":"","type":"git","file":"cl1942nes"},{"name":"1v1.LoL","img":"","type":"git","file":"cl1v1lol"},{"name":"2D Doom","img":"","type":"git","file":"cl2doom"},{"name":"3 Pandas","img":"","type":"git","file":"cl3pandas"},{"name":"3 Pandas Brazil","img":"","type":"git","file":"cl3pandasbrazil"},{"name":"3 Pandas Fantasy","img":"","type":"git","file":"cl3pandasfantasy"},{"name":"3D Dash","img":"","type":"git","file":"cl3dash"},{"name":"3D Dash Editor","img":"","type":"git","file":"cl3dasheditor"},{"name":"3D Pinball Space Cadet","img":"","type":"git","file":"cl3dpinballspacecadet"},{"name":"A Small World Cup","img":"","type":"git","file":"clasmallworldcup"},{"name":"Agar.io Lite","img":"","type":"git","file":"clagariolite"},{"name":"Among Us","img":"","type":"git","file":"clamongus"},{"name":"Angry Birds Showdown","img":"","type":"git","file":"clangrybirdsshowdown"},{"name":"Angrybirds","img":"","type":"git","file":"clangrybirds"},{"name":"Angrybirds 2","img":"","type":"git","file":"clangrybirds2"},{"name":"Angrybirds Space","img":"","type":"git","file":"clangrybirds-space"},{"name":"Aquapark.io","img":"","type":"git","file":"claquaparkio"},{"name":"Baby Sniper in Vietnam","img":"","type":"git","file":"clbabysniperinvietnam"},{"name":"Backrooms","img":"","type":"git","file":"clbackrooms"},{"name":"Bad Parenting","img":"","type":"git","file":"clbadparenting"},{"name":"Baldi's Basics","img":"","type":"git","file":"clbaldisbasics"},{"name":"Basket Bros","img":"","type":"git","file":"clbasketbros"},{"name":"Basket Random","img":"","type":"git","file":"clbasketrandom"},{"name":"Basketball Legends","img":"","type":"git","file":"clbasketballlegends"},{"name":"Battle Karts","img":"","type":"git","file":"clbattlekarts"},{"name":"Bitlife","img":"","type":"git","file":"clbitlife"},{"name":"Bitlife Encrypted","img":"","type":"git","file":"clbitlifeencrypted"},{"name":"Block Blast","img":"","type":"git","file":"clblockblast"},{"name":"Bloons","img":"","type":"git","file":"clbloons"},{"name":"Bloons 2","img":"","type":"git","file":"clbloons2"},{"name":"Bloons TD1","img":"","type":"git","file":"clbloonsTD1"},{"name":"Bloons TD2","img":"","type":"git","file":"clbloonsTD2"},{"name":"Bloons TD3","img":"","type":"git","file":"clbloonsTD3"},{"name":"Bloons TD4","img":"","type":"git","file":"clbloonsTD4"},{"name":"BMX 2","img":"","type":"git","file":"clBMX2"},{"name":"Bowmasters","img":"","type":"git","file":"clbowmaster"},{"name":"Brotato","img":"","type":"git","file":"clbrotato"},{"name":"Buckshot Roulette","img":"","type":"git","file":"clbuckshotroulette"},{"name":"C.S 1.6","img":"","type":"git","file":"clcs16"},{"name":"Class of '09","img":"","type":"git","file":"clclassof09"},{"name":"Cluster Rush","img":"","type":"git","file":"clclusterrush"},{"name":"Cluster Rush Backup","img":"","type":"git","file":"clusterrush"},{"name":"Crossy Road","img":"","type":"git","file":"clcrossyroad"},{"name":"FIFA 07","img":"","type":"git","file":"clFIFA07"},{"name":"FIFA 2000","img":"","type":"git","file":"clfifa2000"},{"name":"Final Earth 2","img":"","type":"git","file":"clfinalearth2"},{"name":"Final Fantasy","img":"","type":"git","file":"clfinalfantasy"},{"name":"Final Fantasy 2: NES","img":"","type":"git","file":"clfinalfantasy2nes"},{"name":"Final Ninja","img":"","type":"git","file":"clfinalninja"},{"name":"Fireboy & Watergirl","img":"","type":"git","file":"clfireboyandwatergirl"},{"name":"Grow a Garden","img":"","type":"git","file":"clgrowagarden"},{"name":"Ice Dodo","img":"","type":"git","file":"clicedodo"},{"name":"Impossible Quiz","img":"","type":"git","file":"climpossiblequiz"},{"name":"Jetpack Joyride","img":"","type":"git","file":"cljetpackjoyride"},{"name":"Jetrush","img":"","type":"git","file":"cljetrush"},{"name":"Jetski Racing","img":"","type":"git","file":"cljetskiracing"},{"name":"Johnny Trigger","img":"","type":"git","file":"cljohnnytrigger"},{"name":"Karate Bros","img":"","type":"git","file":"clkaratebros"},{"name":"Karlson","img":"","type":"git","file":"clkarlson"},{"name":"Kart Bros","img":"","type":"git","file":"clkartbros"},{"name":"Kill the Ice Age Baby Adventure","img":"","type":"git","file":"clkilltheiceagebabyadventure"},{"name":"Kim Jong Un Tile Puzzle","img":"","type":"git","file":"clkimjonguntilepuzzle"},{"name":"Kirby's Adventure","img":"","type":"git","file":"clkirbysadventure"},{"name":"Little Alchemyy 2","img":"","type":"git","file":"cllittlealchemy2"},{"name":"Marble Racer","img":"","type":"git","file":"clmarbleracer"},{"name":"Mario Kart 64","img":"","type":"git","file":"clmariokart64"},{"name":"Max Payne","img":"","type":"git","file":"clmaxpayne"},{"name":"Melon Playground","img":"","type":"git","file":"clmelonplayground"},{"name":"Mini Flips","img":"","type":"git","file":"clminiflips"},{"name":"Mini Mart","img":"","type":"git","file":"clminimart"},{"name":"Minishooters","img":"","type":"git","file":"clminishooters"},{"name":"Minitooth","img":"","type":"git","file":"clminitooth"},{"name":"Miragine War","img":"","type":"git","file":"clmiraginewar"},{"name":"Missle Command","img":"","type":"git","file":"clmisslecommand"},{"name":"Moto X3M","img":"","type":"git","file":"clmotox3m3"},{"name":"Moto X3M 2","img":"","type":"git","file":"clmotox3m2"},{"name":"MR Racer","img":"","type":"git","file":"clmrracer"},{"name":"Ms Pacman","img":"","type":"git","file":"clmspacman (1)"},{"name":"Persona","img":"","type":"git","file":"clpersona"},{"name":"Persona 2","img":"","type":"git","file":"clpersona2"},{"name":"pinkbike","img":"","type":"git","file":"clpinkbike"},{"name":"Pizzatower","img":"","type":"git","file":"clpizzatower"},{"name":"Plants vs. Zombies","img":"","type":"git","file":"clplantsvszombies"},{"name":"Ragdoll Achievement","img":"","type":"git","file":"clragdollachivement"},{"name":"Ragdoll Archers","img":"","type":"git","file":"clragdollarchers"},{"name":"Ragdoll Drop","img":"","type":"git","file":"clragdolldrop"},{"name":"Ragdoll Hit","img":"","type":"git","file":"clragdollhit"},{"name":"Ragdoll Runners","img":"","type":"git","file":"clragdollrunners"},{"name":"Ragdoll Soccer","img":"","type":"git","file":"clragdollsoccer"},{"name":"Ragdoll.io","img":"","type":"git","file":"clragdoll-io"},{"name":"Russian Buckshot","img":"","type":"git","file":"clrussianbuckshot"},{"name":"Slope","img":"","type":"git","file":"clslope"}];
+function s(v){const q=v.toLowerCase();document.querySelectorAll('.game-card').forEach(c=>{c.style.display=c.innerText.toLowerCase().includes(q)?'flex':'none';});}
+document.querySelectorAll('.game-card').forEach((c,i) => {
+    c.onclick = () => {
+        const g = data[i];
+        if(g.type==='manual'){
+            const w=window.open(); w.document.write(g.code); w.document.close();
+        } else {
+            const btns = document.querySelectorAll('#sections-container input');
+            btns.forEach(b => { if(b.value === g.file) b.click(); });
+        }
+    };
+});
+</script></body></html>
